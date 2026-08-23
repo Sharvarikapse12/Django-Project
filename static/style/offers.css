@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f3;
+    color: #394957;
+}
+
+header {
+    height: 75px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.06);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo span,
+h2 span,
+h1 span {
+    color: #d98f98;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #394957;
+    transition: 0.3s;
+}
+
+nav a:hover,
+.active {
+    color: #d98f98;
+}
+
+.login {
+    padding: 10px 20px;
+    color: white !important;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#e8a0a8,#a9c7d8);
+}
+
+.offer-banner {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg,#f6d7d9,#dcecf3);
+}
+
+.offer-banner h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.offers {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.offers h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.offer-card {
+    padding: 35px 25px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.4s;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.discount {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #f6d7d9;
+    color: #c87580;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.offer-card p {
+    margin: 15px 0 25px;
+    color: #788692;
+}
+
+button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(135deg,#e8a0a8,#a9c7d8);
+    color: white;
+    font-weight: bold;
+}
+
+.coupon {
+    margin-top: 50px;
+    padding: 35px;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#fff,#e9f3f6);
+}
+
+.coupon strong {
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 20px;
+    border: 2px dashed #d98f98;
+    border-radius: 10px;
+}
+
+footer {
+    background: #edf4f6;
+    padding: 45px 8% 15px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 30px;
+}
+
+.footer-content a {
+    display: block;
+    color: #586773;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.footer-content p {
+    color: #687783;
+    line-height: 1.6;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 12px;
+    width: 100%;
+}
+
+.copyright {
+    border-top: 1px solid #d5e0e4;
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+@media(max-width:800px) {
+    nav {
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .offer-grid,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
