@@ -4,64 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxora - Contact</title>
+
+    <title>Luxora | Contact</title>
+
     <link rel="stylesheet" href="{% static "style/contact.css" %}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
+<div class="top-bar">
+    <span>🚚 Free Shipping on Orders Above ₹999</span>
+    <span>％ Get 20% OFF on Your First Order</span>
+    <span>🎧 24/7 Customer Support</span>
+</div>
+
 <header>
-    <div class="logo">Luxora<span>.</span></div>
+
+    <div class="logo">
+        <div class="logo-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        Luxora
+    </div>
 
     <nav>
         <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
         <a href="categories.html">Categories</a>
         <a href="offers.html">Offers</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="active">Contact</a>
-        <a href="login.html" class="login">Login</a>
     </nav>
+
+    <div class="header-icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-regular fa-user"></i>
+    </div>
+
 </header>
 
-<section class="contact-hero">
+<section class="contact-heading">
+
+    <p>WE ARE HERE TO HELP</p>
+
     <h1>Get in <span>Touch</span></h1>
-    <p>We're here to help you with your shopping journey.</p>
+
+    <div class="line"></div>
+
+    <h4>Have questions? We'd love to hear from you.</h4>
+
 </section>
 
-<section class="contact-section">
+<section class="contact-container">
 
     <div class="contact-info">
 
         <h2>Let's Talk</h2>
 
-        <div class="info">
-            <span>📍</span>
+        <p>
+            Our support team is ready to help you with orders,
+            products and any other questions.
+        </p>
+
+        <div class="info-box">
+            <i class="fa-solid fa-location-dot"></i>
             <div>
-                <h3>Our Address</h3>
-                <p>123 Shopping Street, India</p>
+                <h3>Our Location</h3>
+                <p>123 Fashion Street, India</p>
             </div>
         </div>
 
-        <div class="info">
-            <span>📞</span>
+        <div class="info-box">
+            <i class="fa-solid fa-phone"></i>
             <div>
                 <h3>Phone</h3>
                 <p>+91 98765 43210</p>
             </div>
         </div>
 
-        <div class="info">
-            <span>✉️</span>
+        <div class="info-box">
+            <i class="fa-solid fa-envelope"></i>
             <div>
                 <h3>Email</h3>
                 <p>support@luxora.com</p>
             </div>
         </div>
 
-        <div class="info">
-            <span>⏰</span>
+        <div class="info-box">
+            <i class="fa-solid fa-clock"></i>
             <div>
                 <h3>Working Hours</h3>
-                <p>Mon - Sat : 9 AM - 7 PM</p>
+                <p>Mon - Sun | 24/7</p>
             </div>
         </div>
 
@@ -80,53 +118,18 @@
 
             <input type="text" placeholder="Subject" required>
 
-            <textarea placeholder="Write your message..." rows="6"></textarea>
+            <textarea placeholder="Write your message..." required></textarea>
 
-            <button type="submit">Send Message →</button>
+            <button type="submit">
+                Send Message
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
 
         </form>
 
     </div>
 
 </section>
-
-<footer>
-
-    <div class="footer-content">
-
-        <div>
-            <h2>Luxora<span>.</span></h2>
-            <p>Your trusted destination for online shopping.</p>
-        </div>
-
-        <div>
-            <h3>Quick Links</h3>
-            <a href="index.html">Home</a>
-            <a href="categories.html">Categories</a>
-            <a href="offers.html">Offers</a>
-        </div>
-
-        <div>
-            <h3>Help</h3>
-            <a href="#">FAQ</a>
-            <a href="#">Shipping</a>
-            <a href="#">Returns</a>
-        </div>
-
-        <div>
-            <h3>Connect</h3>
-            <p>Instagram</p>
-            <p>Facebook</p>
-            <p>LinkedIn</p>
-        </div>
-
-    </div>
-
-    <div class="copyright">
-        © 2026 Luxora. All Rights Reserved.
-    </div>
-
-</footer>
 
 </body>
 </html>

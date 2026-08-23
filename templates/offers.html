@@ -4,102 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxora - Offers</title>
+    <title>Luxora | Offers</title>
     <link rel="stylesheet" href="{% static "style/offers.css" %}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
+<div class="top-bar">
+    <span>🚚 Free Shipping on Orders Above ₹999</span>
+    <span>％ Get 20% OFF on Your First Order</span>
+    <span>🎧 24/7 Customer Support</span>
+</div>
+
 <header>
-    <div class="logo">Luxora<span>.</span></div>
+
+    <div class="logo">
+        <div class="logo-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        Luxora
+    </div>
 
     <nav>
         <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
         <a href="categories.html">Categories</a>
         <a href="offers.html" class="active">Offers</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="login.html" class="login">Login</a>
     </nav>
+
+    <div class="header-icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-regular fa-user"></i>
+    </div>
+
 </header>
 
-<section class="offer-banner">
+<section class="offer-heading">
     <p>LIMITED TIME DEALS</p>
-    <h1>Big Savings, <span>Better Shopping</span></h1>
-    <p>Enjoy amazing discounts on your favourite products.</p>
+    <h1>Exclusive <span>Offers</span></h1>
+    <div class="line"></div>
+    <h4>Grab amazing deals before they disappear!</h4>
 </section>
 
-<section class="offers">
+<section class="offers-container">
 
-    <h2>Today's <span>Best Offers</span></h2>
+    <div class="offer-card">
+        <div class="discount">50% OFF</div>
 
-    <div class="offer-grid">
-
-        <div class="offer-card">
-            <div class="discount">50% OFF</div>
-            <h3>Fashion Collection</h3>
-            <p>Upgrade your wardrobe with our latest collection.</p>
-            <button>Shop Now →</button>
+        <div class="offer-icon">
+            <i class="fa-solid fa-shirt"></i>
         </div>
 
-        <div class="offer-card">
-            <div class="discount">40% OFF</div>
-            <h3>Smart Electronics</h3>
-            <p>Get the latest gadgets at amazing prices.</p>
-            <button>Shop Now →</button>
-        </div>
+        <h2>Fashion Sale</h2>
+        <p>Get up to 50% off on selected fashion products.</p>
 
-        <div class="offer-card">
-            <div class="discount">30% OFF</div>
-            <h3>Beauty Essentials</h3>
-            <p>Discover premium beauty products.</p>
-            <button>Shop Now →</button>
-        </div>
-
+        <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
     </div>
 
-    <div class="coupon">
-        <h2>Extra 15% OFF</h2>
-        <p>Use coupon code</p>
-        <strong>LUXORA15</strong>
-        <button>Copy Code</button>
+    <div class="offer-card">
+        <div class="discount">40% OFF</div>
+
+        <div class="offer-icon">
+            <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+
+        <h2>Tech Deals</h2>
+        <p>Upgrade your gadgets with amazing discounts.</p>
+
+        <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="offer-card">
+        <div class="discount">30% OFF</div>
+
+        <div class="offer-icon">
+            <i class="fa-solid fa-gem"></i>
+        </div>
+
+        <h2>Accessories</h2>
+        <p>Stylish accessories at unbelievable prices.</p>
+
+        <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
     </div>
 
 </section>
 
-<footer>
-    <div class="footer-content">
+<div class="coupon">
+    <i class="fa-solid fa-ticket"></i>
 
-        <div>
-            <h2>Luxora<span>.</span></h2>
-            <p>Smart shopping made beautiful and simple.</p>
-        </div>
-
-        <div>
-            <h3>Shop</h3>
-            <a href="categories.html">Categories</a>
-            <a href="offers.html">Offers</a>
-            <a href="#">Products</a>
-        </div>
-
-        <div>
-            <h3>Support</h3>
-            <a href="contact.html">Contact</a>
-            <a href="#">Help Center</a>
-            <a href="#">Returns</a>
-        </div>
-
-        <div>
-            <h3>Newsletter</h3>
-            <p>Subscribe for exclusive offers.</p>
-            <input type="email" placeholder="Your email">
-        </div>
-
+    <div>
+        <h3>First Order Special</h3>
+        <p>Use coupon <strong>LUXORA20</strong> and get 20% OFF</p>
     </div>
 
-    <div class="copyright">
-        © 2026 Luxora. All Rights Reserved.
-    </div>
-</footer>
+    <button>Copy Code</button>
+</div>
 
 </body>
 </html>

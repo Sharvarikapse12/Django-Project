@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxora | Wishlist</title>
+
+    <link rel="stylesheet" href="{% static "style/wishlist.css" %}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="top-bar">
+    <span>🚚 Free Shipping on Orders Above ₹999</span>
+    <span>％ Get 20% OFF on Your First Order</span>
+    <span>🎧 24/7 Customer Support</span>
+</div>
+
+<header>
+
+    <div class="logo">
+        <div class="logo-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        Luxora
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="categories.html">Categories</a>
+        <a href="offers.html">Offers</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <a href="wishlist.html">
+            <i class="fa-solid fa-heart active-icon"></i>
+        </a>
+
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-regular fa-user"></i>
+    </div>
+
+</header>
+
+<section class="wishlist-heading">
+
+    <p>YOUR FAVOURITES</p>
+
+    <h1>My <span>Wishlist</span></h1>
+
+    <div class="line"></div>
+
+    <h4>Save your favourite products for later.</h4>
+
+</section>
+
+<section class="wishlist-container">
+
+    <div class="wishlist-card">
+
+        <div class="product-image">
+            <i class="fa-solid fa-shirt"></i>
+        </div>
+
+        <button class="remove">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="product-details">
+            <p class="category">FASHION</p>
+            <h2>Premium Casual Shirt</h2>
+
+            <div class="rating">
+                ★★★★★ <span>(125)</span>
+            </div>
+
+            <div class="price">
+                ₹1,299
+                <del>₹1,999</del>
+            </div>
+
+            <button class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+    <div class="wishlist-card">
+
+        <div class="product-image">
+            <i class="fa-solid fa-headphones"></i>
+        </div>
+
+        <button class="remove">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="product-details">
+            <p class="category">ELECTRONICS</p>
+            <h2>Wireless Headphones</h2>
+
+            <div class="rating">
+                ★★★★★ <span>(98)</span>
+            </div>
+
+            <div class="price">
+                ₹2,499
+                <del>₹3,499</del>
+            </div>
+
+            <button class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+    <div class="wishlist-card">
+
+        <div class="product-image">
+            <i class="fa-solid fa-gem"></i>
+        </div>
+
+        <button class="remove">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="product-details">
+            <p class="category">ACCESSORIES</p>
+            <h2>Elegant Handbag</h2>
+
+            <div class="rating">
+                ★★★★★ <span>(76)</span>
+            </div>
+
+            <div class="price">
+                ₹1,899
+                <del>₹2,499</del>
+            </div>
+
+            <button class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

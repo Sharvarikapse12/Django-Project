@@ -24,3 +24,5 @@ def contact(request):
 def login(request):
     return render(request , 'login.html')
 
+def wishlist(request):
+    return render(request , 'wishlist.html')

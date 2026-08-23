@@ -2,184 +2,253 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #fff8f3;
-    color: #394957;
+    background: #fdfdfd;
+    color: #263b57;
 }
 
+/* Top */
+
+.top-bar {
+    height: 38px;
+    background: linear-gradient(90deg, #356bb3, #8a63bd, #d84f9d);
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* Header */
+
 header {
-    height: 75px;
-    padding: 0 8%;
+    height: 80px;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
-    box-shadow: 0 3px 20px rgba(0,0,0,0.06);
+    padding: 0 55px;
+    box-shadow: 0 3px 15px rgba(53, 107, 179, 0.08);
 }
 
 .logo {
-    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 23px;
     font-weight: bold;
 }
 
-.logo span,
-h2 span,
-h1 span {
-    color: #d98f98;
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #356bb3, #d84f9d);
 }
 
 nav {
     display: flex;
-    gap: 25px;
-    align-items: center;
+    gap: 28px;
 }
 
 nav a {
+    color: #394b61;
     text-decoration: none;
-    color: #394957;
-    transition: 0.3s;
+    font-size: 14px;
+    padding: 10px 0;
 }
 
 nav a:hover,
-.active {
-    color: #d98f98;
+nav a.active {
+    color: #356bb3;
 }
 
-.login {
-    padding: 10px 20px;
-    color: white !important;
-    border-radius: 25px;
-    background: linear-gradient(135deg,#e8a0a8,#a9c7d8);
+.header-icons {
+    display: flex;
+    gap: 20px;
 }
 
-.offer-banner {
+.header-icons i {
+    cursor: pointer;
+}
+
+.header-icons i:hover {
+    color: #d84f9d;
+}
+
+/* Heading */
+
+.offer-heading {
     text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg,#f6d7d9,#dcecf3);
+    padding: 65px 20px 35px;
 }
 
-.offer-banner h1 {
-    font-size: 48px;
-    margin: 15px 0;
+.offer-heading p {
+    color: #356bb3;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.offers {
-    padding: 70px 8%;
-    text-align: center;
+.offer-heading h1 {
+    font-size: 42px;
+    margin: 10px;
 }
 
-.offers h2 {
-    font-size: 35px;
-    margin-bottom: 40px;
+.offer-heading h1 span {
+    background: linear-gradient(90deg, #356bb3, #d84f9d);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-.offer-grid {
+.line {
+    width: 60px;
+    height: 4px;
+    margin: auto;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #356bb3, #d84f9d);
+}
+
+.offer-heading h4 {
+    color: #7d8997;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+/* Offers */
+
+.offers-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto 40px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
 .offer-card {
-    padding: 35px 25px;
+    position: relative;
+    text-align: center;
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transition: 0.4s;
+    border-radius: 22px;
+    padding: 40px 25px;
+    border: 1px solid #edf0f5;
+    box-shadow: 0 8px 25px rgba(53, 107, 179, 0.09);
+    transition: 0.3s;
 }
 
 .offer-card:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-8px);
 }
 
 .discount {
-    display: inline-block;
-    padding: 8px 15px;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    background: linear-gradient(135deg, #356bb3, #d84f9d);
+    color: white;
+    padding: 8px 12px;
     border-radius: 20px;
-    background: #f6d7d9;
-    color: #c87580;
+    font-size: 12px;
     font-weight: bold;
-    margin-bottom: 20px;
+}
+
+.offer-icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin: 10px auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #356bb3;
+    background: linear-gradient(135deg, #edf5ff, #fcecf7);
 }
 
 .offer-card p {
-    margin: 15px 0 25px;
-    color: #788692;
-}
-
-button {
-    border: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    cursor: pointer;
-    background: linear-gradient(135deg,#e8a0a8,#a9c7d8);
-    color: white;
-    font-weight: bold;
-}
-
-.coupon {
-    margin-top: 50px;
-    padding: 35px;
-    border-radius: 20px;
-    background: linear-gradient(135deg,#fff,#e9f3f6);
-}
-
-.coupon strong {
-    display: inline-block;
-    margin: 15px;
-    padding: 12px 20px;
-    border: 2px dashed #d98f98;
-    border-radius: 10px;
-}
-
-footer {
-    background: #edf4f6;
-    padding: 45px 8% 15px;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
-    gap: 30px;
-}
-
-.footer-content a {
-    display: block;
-    color: #586773;
-    text-decoration: none;
-    margin: 10px 0;
-}
-
-.footer-content p {
-    color: #687783;
+    color: #7d8997;
+    margin: 12px 0 25px;
     line-height: 1.6;
 }
 
-input {
-    padding: 12px;
+.offer-card button,
+.coupon button {
     border: none;
-    border-radius: 20px;
-    margin-top: 12px;
-    width: 100%;
+    color: white;
+    cursor: pointer;
+    padding: 12px 22px;
+    border-radius: 9px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #356bb3, #d84f9d);
 }
 
-.copyright {
-    border-top: 1px solid #d5e0e4;
-    margin-top: 30px;
-    padding-top: 15px;
-    text-align: center;
+.offer-card button:hover,
+.coupon button:hover {
+    transform: translateY(-2px);
 }
 
-@media(max-width:800px) {
+/* Coupon */
+
+.coupon {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto 70px;
+    padding: 25px 30px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(100deg, #edf5ff, #fcecf7);
+}
+
+.coupon > i {
+    font-size: 35px;
+    color: #356bb3;
+}
+
+.coupon div {
+    flex: 1;
+}
+
+.coupon p {
+    color: #7d8997;
+    margin-top: 5px;
+}
+
+.coupon strong {
+    color: #d84f9d;
+}
+
+@media(max-width: 850px) {
     nav {
-        gap: 10px;
-        font-size: 13px;
+        display: none;
     }
 
-    .offer-grid,
-    .footer-content {
+    .offers-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 550px) {
+    .offers-container {
         grid-template-columns: 1fr;
+    }
+
+    .coupon {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        padding: 0 20px;
     }
 }
