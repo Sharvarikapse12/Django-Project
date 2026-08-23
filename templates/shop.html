@@ -1,0 +1,706 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Luxora | Shop</title>
+
+    <link rel="stylesheet"
+          href="{% static "style/home.css" %}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<div class="top-bar">
+
+    <p>
+        <i class="fa-solid fa-truck-fast"></i>
+        Free Shipping Above ₹999
+    </p>
+
+    <p>
+        ✦ New Season Sale — Up to 50% OFF
+    </p>
+
+</div>
+
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </span>
+
+        Luxora
+
+    </a>
+
+
+    <nav class="navbar">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="shop.html" class="active">
+            Shop
+        </a>
+
+        <a href="index.html#categories">
+            Categories
+        </a>
+
+        <a href="index.html#offers">
+            Offers
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+        <a href="#" class="header-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+
+        <a href="#" class="header-icon">
+            <i class="fa-regular fa-heart"></i>
+        </a>
+
+        <a href="cart.html" class="header-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="notification">2</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<section class="shop-header">
+
+    <div>
+
+        <span>OUR COLLECTION</span>
+
+        <h1>
+            Shop <b>Everything</b>
+        </h1>
+
+        <p>
+            Discover products selected for your lifestyle.
+        </p>
+
+    </div>
+
+
+    <div class="breadcrumb">
+
+        <a href="index.html">Home</a>
+
+        <i class="fa-solid fa-angle-right"></i>
+
+        Shop
+
+    </div>
+
+</section>
+
+
+<section class="shop-layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="filter-sidebar">
+
+        <div class="filter-heading">
+
+            <h2>Filters</h2>
+
+            <a href="#">Clear All</a>
+
+        </div>
+
+
+        <div class="filter-group">
+
+            <h3>Categories</h3>
+
+            <label>
+                <input type="checkbox">
+                Fashion
+                <span>(1250)</span>
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Electronics
+                <span>(850)</span>
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Accessories
+                <span>(740)</span>
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Beauty
+                <span>(620)</span>
+            </label>
+
+        </div>
+
+
+        <div class="filter-group">
+
+            <h3>Price Range</h3>
+
+            <label>
+                <input type="checkbox">
+                Under ₹500
+            </label>
+
+            <label>
+                <input type="checkbox">
+                ₹500 - ₹1,000
+            </label>
+
+            <label>
+                <input type="checkbox">
+                ₹1,000 - ₹2,500
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Above ₹2,500
+            </label>
+
+        </div>
+
+
+        <div class="filter-group">
+
+            <h3>Rating</h3>
+
+            <label>
+                <input type="checkbox">
+                ⭐⭐⭐⭐⭐
+            </label>
+
+            <label>
+                <input type="checkbox">
+                ⭐⭐⭐⭐☆
+            </label>
+
+            <label>
+                <input type="checkbox">
+                ⭐⭐⭐☆☆
+            </label>
+
+        </div>
+
+
+        <div class="mini-offer">
+
+            <i class="fa-solid fa-tag"></i>
+
+            <strong>Special Offer</strong>
+
+            <p>
+                Get extra 10% OFF using code
+                <b>LUXORA10</b>
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <!-- PRODUCTS -->
+
+    <main class="shop-products">
+
+
+        <div class="shop-toolbar">
+
+            <p>
+                Showing <strong>12</strong> of 2500+ products
+            </p>
+
+            <select>
+
+                <option>
+                    Sort: Featured
+                </option>
+
+                <option>
+                    Price: Low to High
+                </option>
+
+                <option>
+                    Price: High to Low
+                </option>
+
+                <option>
+                    Customer Rating
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        NEW
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                    <i class="fa-solid fa-headphones"></i>
+
+                    <div class="quick-view">
+                        Quick View
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>ELECTRONICS</small>
+
+                    <h3>
+                        Wireless Headphones
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★★ <span>(128)</span>
+                    </div>
+
+                    <div class="price-row">
+
+                        <strong>₹1,999</strong>
+
+                        <del>₹2,999</del>
+
+                        <span>33% OFF</span>
+
+                    </div>
+
+                    <a href="cart.html"
+                       class="add-cart">
+
+                        Add to Cart
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image pink-bg">
+
+                    <span class="badge sale">
+                        SALE
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                    <i class="fa-solid fa-shirt"></i>
+
+                    <div class="quick-view">
+                        Quick View
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>FASHION</small>
+
+                    <h3>
+                        Premium T-Shirt
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★★ <span>(96)</span>
+                    </div>
+
+                    <div class="price-row">
+
+                        <strong>₹799</strong>
+
+                        <del>₹1,299</del>
+
+                        <span>38% OFF</span>
+
+                    </div>
+
+                    <a href="cart.html"
+                       class="add-cart">
+
+                        Add to Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image purple-bg">
+
+                    <span class="badge hot">
+                        HOT
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>ACCESSORIES</small>
+
+                    <h3>
+                        Smart Watch
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★★ <span>(211)</span>
+                    </div>
+
+                    <div class="price-row">
+
+                        <strong>₹2,499</strong>
+
+                        <del>₹3,999</del>
+
+                        <span>37% OFF</span>
+
+                    </div>
+
+                    <a href="cart.html"
+                       class="add-cart">
+
+                        Add to Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image cyan-bg">
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                    <i class="fa-solid fa-shoe-prints"></i>
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>FOOTWEAR</small>
+
+                    <h3>
+                        Sports Shoes
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★☆ <span>(84)</span>
+                    </div>
+
+                    <div class="price-row">
+
+                        <strong>₹1,799</strong>
+
+                        <del>₹2,599</del>
+
+                        <span>31% OFF</span>
+
+                    </div>
+
+                    <a href="cart.html"
+                       class="add-cart">
+
+                        Add to Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        TRENDING
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                    <i class="fa-solid fa-mobile-screen"></i>
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>ELECTRONICS</small>
+
+                    <h3>
+                        Smartphone
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★★ <span>(342)</span>
+                    </div>
+
+                    <div class="price-row">
+
+                        <strong>₹19,999</strong>
+
+                        <del>₹23,999</del>
+
+                        <span>16% OFF</span>
+
+                    </div>
+
+                    <a href="cart.html"
+                       class="add-cart">
+
+                        Add to Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image pink-bg">
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                    <i class="fa-solid fa-glasses"></i>
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>ACCESSORIES</small>
+
+                    <h3>
+                        Premium Sunglasses
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★★ <span>(71)</span>
+                    </div>
+
+                    <div class="price-row">
+
+                        <strong>₹999</strong>
+
+                        <del>₹1,499</del>
+
+                        <span>33% OFF</span>
+
+                    </div>
+
+                    <a href="cart.html"
+                       class="add-cart">
+
+                        Add to Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="pagination">
+
+            <a href="#">‹</a>
+            <a href="#" class="active-page">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">›</a>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <div class="footer-about">
+
+            <a href="index.html" class="footer-logo">
+                <span>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </span>
+                Luxora
+            </a>
+
+            <p>
+                Premium shopping made simple,
+                secure and enjoyable.
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Shop</h3>
+
+            <a href="#">Fashion</a>
+            <a href="#">Electronics</a>
+            <a href="#">Beauty</a>
+            <a href="#">Accessories</a>
+            <a href="#">New Arrivals</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Support</h3>
+
+            <a href="#">Help Center</a>
+            <a href="#">Track Order</a>
+            <a href="#">Returns</a>
+            <a href="#">Shipping</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Legal</h3>
+
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Cookie Policy</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Luxora. All Rights Reserved.
+        </p>
+
+        <div>
+
+            <b>VISA</b>
+            <b>MASTER</b>
+            <b>UPI</b>
+            <b>COD</b>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

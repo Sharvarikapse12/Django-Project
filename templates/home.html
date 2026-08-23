@@ -1,0 +1,1005 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Luxora | Premium Shopping</title>
+
+    <link rel="stylesheet" href="{% static "style/home.css" %}">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+
+    <p>
+        <i class="fa-solid fa-truck-fast"></i>
+        Free Shipping on Orders Above ₹999
+    </p>
+
+    <p>
+        <i class="fa-solid fa-percent"></i>
+        Get 20% OFF on Your First Order
+    </p>
+
+    <p>
+        <i class="fa-solid fa-headset"></i>
+        24/7 Customer Support
+    </p>
+
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <span class="logo-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </span>
+
+        <span>Luxora</span>
+    </a>
+
+
+    <nav class="navbar">
+
+        <a href="index.html" class="active">
+            Home
+        </a>
+
+        <a href="http://127.0.0.1:8000/shop">
+            Shop
+        </a>
+
+        <a href="#categories">
+            Categories
+        </a>
+
+        <a href="#offers">
+            Offers
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+        <a href="#" class="header-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+
+        <a href="#" class="header-icon">
+            <i class="fa-regular fa-heart"></i>
+            <span class="notification">2</span>
+        </a>
+
+        <a href="cart.html" class="header-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="notification">2</span>
+        </a>
+
+        <a href="#" class="profile-icon">
+            <i class="fa-regular fa-user"></i>
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            ✦ NEW SEASON COLLECTION
+        </span>
+
+        <h1>
+
+            Elevate Your
+            <span>Everyday Style.</span>
+
+        </h1>
+
+        <p>
+
+            Discover premium fashion, electronics,
+            accessories and lifestyle products
+            curated specially for you.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="shop.html" class="primary-btn">
+
+                Shop Collection
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="#categories" class="secondary-btn">
+
+                Explore Categories
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-trust">
+
+            <div class="avatars">
+
+                <span>👩</span>
+                <span>👨</span>
+                <span>👩</span>
+                <span>👨</span>
+
+            </div>
+
+            <div>
+
+                <strong>25K+ Happy Customers</strong>
+
+                <small>
+                    ⭐ 4.9/5 Customer Rating
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image-area">
+
+        <div class="hero-main-card">
+
+            <div class="hero-product-icon">
+
+                <i class="fa-solid fa-shirt"></i>
+
+            </div>
+
+            <span>Premium Collection</span>
+
+        </div>
+
+
+        <div class="floating-card floating-one">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <div>
+                <strong>Free Delivery</strong>
+                <small>Orders over ₹999</small>
+            </div>
+
+        </div>
+
+
+        <div class="floating-card floating-two">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <div>
+                <strong>Secure Payment</strong>
+                <small>100% Protected</small>
+            </div>
+
+        </div>
+
+
+        <div class="discount-circle">
+
+            <strong>50%</strong>
+
+            <span>OFF</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRUST FEATURES ================= -->
+
+<section class="trust-section">
+
+    <div class="trust-box">
+
+        <i class="fa-solid fa-truck-fast"></i>
+
+        <div>
+            <h3>Free Shipping</h3>
+            <p>On orders above ₹999</p>
+        </div>
+
+    </div>
+
+
+    <div class="trust-box">
+
+        <i class="fa-solid fa-rotate-left"></i>
+
+        <div>
+            <h3>Easy Returns</h3>
+            <p>7 days return policy</p>
+        </div>
+
+    </div>
+
+
+    <div class="trust-box">
+
+        <i class="fa-solid fa-shield-halved"></i>
+
+        <div>
+            <h3>Secure Payment</h3>
+            <p>100% secure checkout</p>
+        </div>
+
+    </div>
+
+
+    <div class="trust-box">
+
+        <i class="fa-solid fa-headset"></i>
+
+        <div>
+            <h3>24/7 Support</h3>
+            <p>We're here to help</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section" id="categories">
+
+    <div class="section-title">
+
+        <span>SHOP BY CATEGORY</span>
+
+        <h2>
+            Find What <b>You Love</b>
+        </h2>
+
+        <p>
+            Explore our most popular categories
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <a href="shop.html" class="category-card fashion">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-shirt"></i>
+            </div>
+
+            <div>
+                <h3>Fashion</h3>
+                <p>1,250+ Products</p>
+            </div>
+
+            <i class="fa-solid fa-arrow-right category-arrow"></i>
+
+        </a>
+
+
+        <a href="shop.html" class="category-card electronics">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+
+            <div>
+                <h3>Electronics</h3>
+                <p>850+ Products</p>
+            </div>
+
+            <i class="fa-solid fa-arrow-right category-arrow"></i>
+
+        </a>
+
+
+        <a href="shop.html" class="category-card beauty">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+
+            <div>
+                <h3>Beauty</h3>
+                <p>620+ Products</p>
+            </div>
+
+            <i class="fa-solid fa-arrow-right category-arrow"></i>
+
+        </a>
+
+
+        <a href="shop.html" class="category-card accessories">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-glasses"></i>
+            </div>
+
+            <div>
+                <h3>Accessories</h3>
+                <p>740+ Products</p>
+            </div>
+
+            <i class="fa-solid fa-arrow-right category-arrow"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+
+<section class="section products-section">
+
+    <div class="section-title">
+
+        <span>OUR BESTSELLERS</span>
+
+        <h2>
+            Trending <b>Products</b>
+        </h2>
+
+        <p>
+            Loved by thousands of Luxora customers.
+        </p>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+        <!-- PRODUCT -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="badge">NEW</span>
+
+                <button class="wishlist">
+                    ♡
+                </button>
+
+                <i class="fa-solid fa-headphones"></i>
+
+                <div class="quick-view">
+                    Quick View
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>ELECTRONICS</small>
+
+                <h3>
+                    Wireless Headphones
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(128)</span>
+                </div>
+
+                <div class="price-row">
+
+                    <strong>₹1,999</strong>
+
+                    <del>₹2,999</del>
+
+                    <span>33% OFF</span>
+
+                </div>
+
+
+                <a href="cart.html"
+                   class="add-cart">
+
+                    Add to Cart
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT -->
+
+        <div class="product-card">
+
+            <div class="product-image pink-bg">
+
+                <span class="badge sale">
+                    SALE
+                </span>
+
+                <button class="wishlist">
+                    ♡
+                </button>
+
+                <i class="fa-solid fa-shirt"></i>
+
+                <div class="quick-view">
+                    Quick View
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>FASHION</small>
+
+                <h3>
+                    Premium Oversized T-Shirt
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(96)</span>
+                </div>
+
+                <div class="price-row">
+
+                    <strong>₹799</strong>
+
+                    <del>₹1,299</del>
+
+                    <span>38% OFF</span>
+
+                </div>
+
+
+                <a href="cart.html"
+                   class="add-cart">
+
+                    Add to Cart
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT -->
+
+        <div class="product-card">
+
+            <div class="product-image purple-bg">
+
+                <span class="badge hot">
+                    HOT
+                </span>
+
+                <button class="wishlist">
+                    ♡
+                </button>
+
+                <i class="fa-solid fa-clock"></i>
+
+                <div class="quick-view">
+                    Quick View
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>ACCESSORIES</small>
+
+                <h3>
+                    Premium Smart Watch
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(211)</span>
+                </div>
+
+                <div class="price-row">
+
+                    <strong>₹2,499</strong>
+
+                    <del>₹3,999</del>
+
+                    <span>37% OFF</span>
+
+                </div>
+
+
+                <a href="cart.html"
+                   class="add-cart">
+
+                    Add to Cart
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT -->
+
+        <div class="product-card">
+
+            <div class="product-image cyan-bg">
+
+                <button class="wishlist">
+                    ♡
+                </button>
+
+                <i class="fa-solid fa-shoe-prints"></i>
+
+                <div class="quick-view">
+                    Quick View
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>FOOTWEAR</small>
+
+                <h3>
+                    Urban Sports Shoes
+                </h3>
+
+                <div class="rating">
+                    ★★★★☆
+                    <span>(84)</span>
+                </div>
+
+                <div class="price-row">
+
+                    <strong>₹1,799</strong>
+
+                    <del>₹2,599</del>
+
+                    <span>31% OFF</span>
+
+                </div>
+
+
+                <a href="cart.html"
+                   class="add-cart">
+
+                    Add to Cart
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="center-button">
+
+        <a href="shop.html" class="outline-btn">
+
+            View All Products
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OFFER ================= -->
+
+<section class="offer-section" id="offers">
+
+    <div class="offer-content">
+
+        <span>LIMITED TIME OFFER</span>
+
+        <h2>
+            Upgrade Your
+            <b>Everyday Life.</b>
+        </h2>
+
+        <p>
+            Get up to 50% OFF on selected products.
+            Don't miss our biggest sale of the season.
+        </p>
+
+        <a href="shop.html" class="white-btn">
+            Shop Sale
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+
+    <div class="offer-discount">
+
+        <strong>50%</strong>
+
+        <span>OFF</span>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="section reviews-section">
+
+    <div class="section-title">
+
+        <span>WHAT OUR CUSTOMERS SAY</span>
+
+        <h2>
+            Loved by <b>Thousands</b>
+        </h2>
+
+    </div>
+
+
+    <div class="review-grid">
+
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <div class="customer">
+
+                    <div class="customer-avatar">
+                        A
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Ananya Sharma
+                        </strong>
+
+                        <small>
+                            Verified Buyer
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <span>★★★★★</span>
+
+            </div>
+
+            <p>
+                "The quality is amazing and delivery
+                was super fast. Luxora has become my
+                favourite shopping website!"
+            </p>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <div class="customer">
+
+                    <div class="customer-avatar">
+                        R
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Rahul Patil
+                        </strong>
+
+                        <small>
+                            Verified Buyer
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <span>★★★★★</span>
+
+            </div>
+
+            <p>
+                "Very clean website, great products
+                and excellent prices. The headphones
+                I purchased are fantastic."
+            </p>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <div class="customer">
+
+                    <div class="customer-avatar">
+                        S
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Sneha Kapoor
+                        </strong>
+
+                        <small>
+                            Verified Buyer
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <span>★★★★★</span>
+
+            </div>
+
+            <p>
+                "Beautiful products and really smooth
+                shopping experience. I would definitely
+                recommend Luxora."
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div>
+
+        <span>STAY UPDATED</span>
+
+        <h2>
+            Get Exclusive Offers
+        </h2>
+
+        <p>
+            Subscribe to receive new arrivals,
+            special discounts and shopping tips.
+        </p>
+
+    </div>
+
+
+    <form>
+
+        <input
+            type="email"
+            placeholder="Enter your email address"
+            required>
+
+        <button>
+            Subscribe
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer" id="contact">
+
+    <div class="footer-main">
+
+
+        <div class="footer-about">
+
+            <a href="index.html" class="footer-logo">
+
+                <span>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </span>
+
+                Luxora
+
+            </a>
+
+            <p>
+                Your destination for premium fashion,
+                electronics, accessories and lifestyle
+                products. Shop smarter. Live better.
+            </p>
+
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Shop</h3>
+
+            <a href="shop.html">All Products</a>
+            <a href="shop.html">Fashion</a>
+            <a href="shop.html">Electronics</a>
+            <a href="shop.html">Accessories</a>
+            <a href="shop.html">Beauty</a>
+            <a href="shop.html">New Arrivals</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Customer Care</h3>
+
+            <a href="#">My Account</a>
+            <a href="cart.html">My Orders</a>
+            <a href="#">Track Order</a>
+            <a href="#">Returns & Refunds</a>
+            <a href="#">Shipping Information</a>
+            <a href="#">Help Center</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Company</h3>
+
+            <a href="#about">About Luxora</a>
+            <a href="#">Our Story</a>
+            <a href="#">Careers</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                123 Luxora Street, India
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 98765 43210
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                support@luxora.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-clock"></i>
+                Mon - Sun | 24/7
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Luxora. All Rights Reserved.
+        </p>
+
+        <div>
+
+            <span>We Accept</span>
+
+            <b>VISA</b>
+            <b>MASTER</b>
+            <b>UPI</b>
+            <b>COD</b>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
