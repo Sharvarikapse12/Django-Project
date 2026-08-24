@@ -29,5 +29,6 @@ urlpatterns = [
     path('contact/' , views.contact),
     path('login/' , views.login),
     path('wishlist' , views.wishlist),
-    path('cart/payment' , include('payment.urls'))
+    path('cart/payment' , include('payment.urls')),
+    path('cart/payment/order' , include('order.urls'))
 ]

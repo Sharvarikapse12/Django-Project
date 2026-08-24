@@ -1,0 +1,556 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxora | Order Placed</title>
+
+    <link rel="stylesheet" href="{% static "style/order_placed.css" %}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+
+    <span>
+        <i class="fa-solid fa-truck"></i>
+        Free Shipping on Orders Above ₹999
+    </span>
+
+    <span>
+        <i class="fa-solid fa-percent"></i>
+        Get 20% OFF on Your First Order
+    </span>
+
+    <span>
+        <i class="fa-solid fa-headset"></i>
+        24/7 Customer Support
+    </span>
+
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+
+        <span>Luxora</span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="categories.html">Categories</a>
+        <a href="offers.html">Offers</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+    <div class="header-icons">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <a href="wishlist.html">
+            <i class="fa-regular fa-heart"></i>
+        </a>
+
+        <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <a href="login.html">
+            <i class="fa-regular fa-user"></i>
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="order-page">
+
+
+    <!-- ================= SUCCESS CARD ================= -->
+
+    <section class="success-card">
+
+        <div class="success-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+
+        <h1>
+            Order <span>Placed!</span>
+        </h1>
+
+
+        <p class="success-message">
+            Thank you for shopping with Luxora!
+            Your order has been successfully placed.
+        </p>
+
+
+        <div class="order-number">
+
+            <span>Order Number</span>
+
+            <strong>#LUX20260824001</strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ORDER STATUS ================= -->
+
+    <section class="status-card">
+
+        <h2>Order Status</h2>
+
+        <p class="status-subtitle">
+            You can track your order progress below.
+        </p>
+
+
+        <div class="order-tracking">
+
+
+            <!-- STEP 1 -->
+
+            <div class="track-step completed">
+
+                <div class="track-icon">
+
+                    <i class="fa-solid fa-check"></i>
+
+                </div>
+
+                <h3>Order Placed</h3>
+
+                <p>24 Aug, 2026</p>
+
+            </div>
+
+
+            <div class="track-line completed-line"></div>
+
+
+            <!-- STEP 2 -->
+
+            <div class="track-step active">
+
+                <div class="track-icon">
+
+                    <i class="fa-solid fa-box"></i>
+
+                </div>
+
+                <h3>Processing</h3>
+
+                <p>Expected soon</p>
+
+            </div>
+
+
+            <div class="track-line"></div>
+
+
+            <!-- STEP 3 -->
+
+            <div class="track-step">
+
+                <div class="track-icon">
+
+                    <i class="fa-solid fa-truck"></i>
+
+                </div>
+
+                <h3>Shipped</h3>
+
+                <p>Pending</p>
+
+            </div>
+
+
+            <div class="track-line"></div>
+
+
+            <!-- STEP 4 -->
+
+            <div class="track-step">
+
+                <div class="track-icon">
+
+                    <i class="fa-solid fa-house"></i>
+
+                </div>
+
+                <h3>Delivered</h3>
+
+                <p>Expected soon</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTENT ================= -->
+
+    <div class="order-content">
+
+
+        <!-- ================= ORDER DETAILS ================= -->
+
+        <section class="details-card">
+
+            <div class="card-heading">
+
+                <div class="heading-icon">
+                    <i class="fa-solid fa-box-open"></i>
+                </div>
+
+                <div>
+
+                    <h2>Order Details</h2>
+
+                    <p>
+                        Your purchased items
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product">
+
+                <div class="product-image">
+
+                    <i class="fa-solid fa-headphones"></i>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>Wireless Headphones</h3>
+
+                    <p>Midnight Black</p>
+
+                    <span>Quantity: 1</span>
+
+                </div>
+
+
+                <strong>₹1,999</strong>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product">
+
+                <div class="product-image shirt">
+
+                    <i class="fa-solid fa-shirt"></i>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>Premium Oversized T-Shirt</h3>
+
+                    <p>Sky Blue | Large</p>
+
+                    <span>Quantity: 1</span>
+
+                </div>
+
+
+                <strong>₹799</strong>
+
+            </div>
+
+
+            <!-- PRICE -->
+
+            <div class="price-details">
+
+                <div>
+
+                    <span>Subtotal</span>
+
+                    <strong>₹2,798</strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Discount</span>
+
+                    <strong class="discount">
+                        − ₹200
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Shipping</span>
+
+                    <strong class="free">
+                        FREE
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="total">
+
+                <span>Total Paid</span>
+
+                <strong>₹2,598</strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RIGHT COLUMN ================= -->
+
+        <aside class="right-column">
+
+
+            <!-- DELIVERY -->
+
+            <div class="info-card">
+
+                <div class="card-heading">
+
+                    <div class="heading-icon">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h2>Delivery Address</h2>
+
+                        <p>
+                            Your order will be delivered here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="address">
+
+                    <strong>Sharvari Kapse</strong>
+
+                    <p>
+                        123, Main Street,<br>
+                        Nagpur, Maharashtra - 440001<br>
+                        India
+                    </p>
+
+                    <p class="phone">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        +91 98765 43210
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PAYMENT -->
+
+            <div class="info-card">
+
+                <div class="card-heading">
+
+                    <div class="heading-icon">
+
+                        <i class="fa-regular fa-credit-card"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h2>Payment Information</h2>
+
+                        <p>
+                            Payment successfully received.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="payment-info">
+
+                    <div>
+
+                        <span>Payment Method</span>
+
+                        <strong>
+                            <i class="fa-regular fa-credit-card"></i>
+                            Card
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Transaction ID</span>
+
+                        <strong>
+                            TXN78456291
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Payment Status</span>
+
+                        <strong class="paid">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            Paid
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+    </div>
+
+
+    <!-- ================= DELIVERY MESSAGE ================= -->
+
+    <section class="delivery-banner">
+
+        <div class="delivery-icon">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+        </div>
+
+
+        <div>
+
+            <h3>Estimated Delivery</h3>
+
+            <p>
+                Your order is expected to arrive between
+                <strong>28 Aug – 30 Aug, 2026</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ACTION BUTTONS ================= -->
+
+    <div class="action-buttons">
+
+        <a href="http://127.0.0.1:8000/" class="continue-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Continue Shopping
+
+        </a>
+
+
+        <button class="track-btn" onclick="trackOrder()">
+
+            Track Order
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- ================= SECURITY ================= -->
+
+    <div class="secure-note">
+
+        <i class="fa-solid fa-shield-halved"></i>
+
+        Your order and payment information are safe & secure.
+
+    </div>
+
+
+</main>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function trackOrder() {
+
+    alert(
+        "Your order #LUX20260824001 is currently being processed."
+    );
+
+}
+
+</script>
+
+</body>
+</html>
